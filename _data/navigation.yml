@@ -1,0 +1,7 @@
+main:
+  - title: "Resumé"
+    url: "/pages/cv"
+  - title: "Projects"
+    url: "/pages/projects"
+  - title: "Blog"
+    url: "/pages/posts"
