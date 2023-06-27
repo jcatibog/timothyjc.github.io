@@ -26,6 +26,10 @@ const providers = {
   useClass: TemplatePageTitleStrategy
 }
 
+const config = {
+  useHash: true
+}
+
 const routes: Routes = [
   { path: 'about', title: 'About Me', component: AboutComponent },
   { path: 'cv', title: 'Curriculum Vitae', component: CvComponent },
@@ -35,7 +39,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes, config)],
   exports: [RouterModule],
   providers: [providers],
 })

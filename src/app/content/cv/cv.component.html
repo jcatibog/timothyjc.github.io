@@ -1,7 +1,7 @@
 <div class="mb-8">
   <h2 class="text-2xl border-b-2 mb-4 uppercase">Education</h2>
   <div *ngFor="let ed of education">
-    <p>{{ ed.credential }}, {{ ed.program }}, {{ ed.school }}, {{ ed.endDate | date:"MMMM yyyy" }}</p>
+    <p>{{ ed.credential }}, <span *ngIf="ed.program">{{ ed.program }},</span> {{ ed.school }}, {{ ed.endDate | date:"MMMM yyyy" }}</p>
   </div>
 </div>
 

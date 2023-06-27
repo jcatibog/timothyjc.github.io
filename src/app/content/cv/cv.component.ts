@@ -42,7 +42,7 @@ export class CvComponent {
     },
     {
       credential: 'Ontario Secondary School Diploma',
-      program: 'High School',
+      program: '',
       school: 'Pope John Paul II Catholic Secondary School',
       endDate: new Date("2007-06-29")
     },

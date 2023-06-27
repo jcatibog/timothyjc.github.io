@@ -9,8 +9,8 @@
     <p>{{ title }}</p>
   </div>
   <div class="mt-4 p-2 text-white">
-      <a *ngFor="let contact of contactInfo" [href]="contact.href" target="_blank" class="p-8 sm:p-4 lg:p-4 rounded text-gray-300 hover:bg-gray-800">
-        <fa-icon [icon]="contact.icon" size="xl" class="text-white"></fa-icon>
+      <a *ngFor="let contact of contactInfo" [href]="contact.href" target="_blank" class="p-4 mx-2 text-4xl md:text-2xl leading-none aspect-square rounded text-gray-300 hover:bg-gray-800">
+        <fa-icon [icon]="contact.icon" class="text-white text-4xl md:text-3xl leading-none"></fa-icon>
       </a>
   </div>
   <h2 class="text-xl font-semibold mt-8">Top Skills</h2>
