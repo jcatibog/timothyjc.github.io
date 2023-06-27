@@ -1,0 +1,22 @@
+<nav class="bg-gray-800">
+  <div class="mx-auto px-2">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="flex flex-1 items-center justify-center sm:justify-start">
+        <div class="flex space-x-4">
+          <a routerLink="/about" routerLinkActive="bg-gray-700" ariaCurrentWhenActive="page" class="p-2 md:p-4 rounded text-gray-300 hover:bg-gray-700 hover:text-white">
+            <fa-icon [icon]="faAddressCard" size="xl" class="text-white pr-1"></fa-icon>
+            About Me
+          </a>
+          <a routerLink="/cv" routerLinkActive="bg-gray-700" ariaCurrentWhenActive="page" class="p-2 md:p-4 rounded text-gray-300 hover:bg-gray-700 hover:text-white">
+            <fa-icon [icon]="faFileInvoice" size="xl" class="text-white pr-2"></fa-icon>
+            CV
+          </a>
+          <a routerLink="/projects" routerLinkActive="bg-gray-700" ariaCurrentWhenActive="page" class="p-2 md:p-4 rounded text-gray-300 hover:bg-gray-700 hover:text-white">
+            <fa-icon [icon]="faLaptopCode" size="xl" class="text-white pr-1"></fa-icon>
+            Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

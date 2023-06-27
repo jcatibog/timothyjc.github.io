@@ -1,0 +1,22 @@
+<div class="mb-8">
+  <h2 class="text-2xl border-b-2 mb-4 uppercase">Education</h2>
+  <div *ngFor="let ed of education">
+    <p>{{ ed.credential }}, {{ ed.program }}, {{ ed.school }}, {{ ed.endDate | date:"MMMM yyyy" }}</p>
+  </div>
+</div>
+
+<div class="mb-8">
+  <h2 class="text-2xl border-b-2 mb-4  uppercase">Experience</h2>
+  <div *ngFor="let exp of experiences">
+    <p>{{ exp.title }}, {{ exp.startDate | date:"MMMM yyyy" }} - {{ exp.endDate | date:"MMMM yyyy" }}, {{ exp.company }}</p>
+  </div>
+</div>
+
+<div class="mb-8">
+  <h2 class="text-2xl border-b-2 mb-4  uppercase">Awards / Certifications</h2>
+  <div *ngFor="let cert of certifications">
+    <p>
+      {{ cert.credential }}, {{ cert.title }}, {{ cert.awardedOn | date:"MMMM yyyy" }}
+    </p>
+  </div>
+</div>
